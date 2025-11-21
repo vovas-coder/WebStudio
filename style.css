@@ -9,3 +9,7 @@
     --main-white-color: #ECECEC;
     --main-white-color: #F5F4FA;
 }
+body {
+    font-family: "Roboto", sans-serif;
+}
+
