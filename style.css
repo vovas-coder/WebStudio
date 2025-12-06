@@ -9,26 +9,13 @@
     --main-white-color: #ECECEC;
     --main-white-color: #F5F4FA;
 }
-body {
-    font-family: "Roboto", sans-serif;
-}
+
 .logo {
     font-family: "Raleway", sans-serif ;
     
 }
-button {
-    font-family: "Roboto", sans-serif;
-}
+body {
+ font-family: "Roboto";
 
-h3 {
-    font-family: "Roboto", sans-serif;
-}
-
-p {
-    font-family: "Roboto", sans-serif;
-}
-
-h2 {
-    font-family: "Roboto", sans-serif;
 }
 
