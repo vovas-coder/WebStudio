@@ -33,5 +33,36 @@ section {
   padding: 0 15px;
   margin: 0 auto;
 }
+.hero_button {
+  line-height: 1.8;
+  width: 216px ;
+  height: 50px;
+}
+.Features_item_title {
+  line-height: 1.4;
+  width: 270px;
+  height: 16px;
+}
+.Features_item_text {
+  line-height: 1.7;
+}
+.services_title {
+  line-height: 3.6;
+}
+.team_title {
+  line-height: 3.6;
+}
+.team_number_name {
+  line-height: 1.6;
+}
+.team_number_role {
+  line-height: 1.6;
+}
+.logo {
+  line-height: 2.6;
+}
+.address {
+  line-height: 1.5;
+}
 
 
