@@ -288,3 +288,31 @@ footer .container {
   font-size: 14px;
   color: #757575;
 }
+.Features_list_item {
+  margin-top: 200px;
+}
+.Features_list_item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.Features_list_item:nth-child(1)::before{
+  background-image: url(//img/Group.png);
+}
+.Features_list_item:nth-child(2)::before{
+  background-image: url(//img/clock.png);
+}
+.Features_list_item:nth-child(3)::before{
+  background-image: url(//img/diagram.png);
+}
+.Features_list_item:nth-child(4)::before{
+  background-image: url(//img/astronaut.png);
+}
