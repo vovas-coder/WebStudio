@@ -300,7 +300,6 @@ footer .container {
   padding-top: 100px;
   width: 270px;
   text-align: left;
-  background-color: #F5F4FA;
   border-radius: 4px;
   padding-bottom: 30px;
 }
@@ -308,6 +307,7 @@ footer .container {
 .Features_list_item::before {
   content: "";
   position: absolute;
+  background-color: #F5F4FA;
   top: 20px;
   left: 50%;
   margin-left: -35px;
