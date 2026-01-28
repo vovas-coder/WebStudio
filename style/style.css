@@ -123,7 +123,13 @@ header>.container {
 .hero {
   background-color: #2F303A;
   width: 100%;
-  height: auto;
+  height: 600px;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+  url(../img/Img-hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Features_list {
   display: flex;
@@ -187,6 +193,7 @@ header>.container {
 .team {
   padding: 60px 0;
   text-align: center;
+  background-color: #F5F4FA;
 }
 
 .team_title {
@@ -209,6 +216,7 @@ header>.container {
   flex: 1;
   max-width: 250px;
   margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .team_img {
@@ -225,7 +233,7 @@ header>.container {
 
 .team_number_role {
   font-size: 16px;
-  color: #F5F4FA;
+  color: #757575;
 }
 footer {
   background-color: #2f303a;
@@ -271,6 +279,7 @@ footer .container {
 .galery_list_item {
   flex: 1 1 calc(33.333% - 30px);
   box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .galery_item_img {
@@ -306,21 +315,17 @@ footer .container {
 
 .Features_list_item::before {
   content: "";
-  position: absolute;
+  display: block;
+  width: 270px;
+  height: 120px;
   background-color: #F5F4FA;
-  top: 20px;
-  left: 50%;
-  margin-left: -35px;
-  width: 70px;
-  height: 70px;
-  background-size: contain;
+  background-image: url(../img/Group.png);
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
 }
 
-.Features_list_item:nth-child(1)::before {
-  background-image: url("../img/Group.png");
-}
 
 .Features_list_item:nth-child(2)::before {
   background-image: url("../img/clock.png");
@@ -332,4 +337,8 @@ footer .container {
 
 .Features_list_item:nth-child(4)::before {
   background-image: url("../img/astronaut.png");
+}
+footer {
+  width: 100%;
+  height: auto;
 }
