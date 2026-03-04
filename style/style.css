@@ -10,6 +10,10 @@
     --main-white-color: #F5F4FA;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
     font-family: "Raleway", sans-serif ;  
 }
@@ -89,8 +93,10 @@ header>.container {
 .nav_list {
   display: flex;
   gap: 70px;
-  
 }
+
+
+
 .header_contackt {
   display: flex;
   gap: 15px;
@@ -235,6 +241,58 @@ header>.container {
   font-size: 16px;
   color: #757575;
 }
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients_h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.svg_list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.svg_list_item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.client_icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: 0.3s;
+}
+
+.svg_list_item:hover {
+  border-color: #2196f3;
+}
+
+.svg_list_item:hover .client_icon {
+  fill: #2196f3;
+}
+
+
+
 footer {
   background-color: #2f303a;
   color: white;
