@@ -90,12 +90,43 @@ header>.container {
   justify-content: space-between;
   align-items: center;
 }
+
+
+.header_contackt_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.gmail,
+.number {
+  color: var(--main--color);
+  text-decoration: none;
+}
+
+.gmail:hover,
+.number:hover {
+  color: #2196F3;
+}
+
+.icon_header {
+  order: -1;
+  fill: currentColor;
+}
+
 .nav_list {
   display: flex;
   gap: 70px;
 }
 
+.nav_list_item a {
+  color: #000000;
+}
 
+.header_contackt a {
+  color: var(--main--color);
+}
 
 .header_contackt {
   display: flex;
@@ -242,6 +273,32 @@ header>.container {
   color: #757575;
 }
 
+
+.team_socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+
+
+.team_socials li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.team_socials li:hover{
+  background:#2196F3;
+  fill: #FFFFFF;
+}
+
 .clients {
   padding: 94px 0;
 }
@@ -291,20 +348,6 @@ header>.container {
   fill: #2196f3;
 }
 
-
-
-footer {
-  background-color: #2f303a;
-  color: white;
-  padding: 60px 0;
-}
-
-footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
 
 .address p {
   margin: 4px 0;
@@ -399,4 +442,39 @@ footer .container {
 footer {
   width: 100%;
   height: auto;
+}
+
+footer{
+  background:#2F303A;
+  color:white;
+  padding:60px 0;
+}
+
+footer .container{
+  display:flex;
+  align-items:flex-start;
+  gap:70px;
+}
+
+.footer_social_list{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+
+.footer_social_item{
+  width:44px;
+  height:44px;
+  background:#ffffff1a;
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  fill:white;
+}
+
+.footer_social_item:hover{
+  background:#2196F3;
 }
