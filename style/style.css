@@ -34,6 +34,14 @@ body {
   font-family: "Roboto";
   font-size: 16px;
 }
+
+label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+  color: var();
+}
+
 section {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -144,12 +152,21 @@ header>.container {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: -21px;
   height: 2px;
   background-color: var(--color-blue);
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.2s ease;
+}
+
+.nav_list_item a {
+  color: var(--color-black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav_list_item a:hover {
+  color: var(--color-blue);
 }
 
 .nav_list_item a.nav-link--active::after {
@@ -158,6 +175,11 @@ header>.container {
 
 .header_contackt a {
   color: var(--color-mid-gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_contackt a:hover{
+  color: var(--color-blue); 
 }
 
 .header_contackt {
@@ -165,6 +187,25 @@ header>.container {
   flex-wrap: wrap;
   gap: 15px;
 }
+
+.header_contackt_item {
+  color: black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_contackt_item:hover {
+  color: blue;
+}
+
+.gmail,
+.number {
+  color: inherit;
+}
+
+.icon_header {
+  fill: currentColor;
+}
+
 .hero .container {
   display: flex;
   flex-direction: column;
@@ -212,6 +253,33 @@ header>.container {
   justify-content: center;
   align-items: center;
 }
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--color-bg);
+}
+
+.btn_close {
+  border-radius: 15px;
+  border: 2px solid var(--color-gray-blue);
+}
+
+.close_X {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #212121;
+}
+
+.name {
+  font-size: 50px;
+}
+
 
 .backdrop {
   position: fixed;
@@ -326,6 +394,8 @@ header>.container {
   background-color: var(--color-bg);
 }
 
+
+
 .team_title {
   font-size: 32px;
   font-weight: 700;
@@ -385,6 +455,8 @@ header>.container {
   align-items: center;
   justify-content: center;
   padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team_socials li:hover{
@@ -423,14 +495,14 @@ header>.container {
   justify-content: center;
   align-items: center;
 
-  transition: 0.3s;
+
 }
 
 .client_icon {
   width: 106px;
   height: 60px;
   fill: var(--color-gray-blue);
-  transition: 0.3s;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg_list_item:hover {
@@ -612,4 +684,7 @@ footer .container{
 
 .footer_social_item:hover{
   background: var(--color-blue);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
